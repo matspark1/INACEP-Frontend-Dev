@@ -1,0 +1,109 @@
+.conference {
+  width: 80vw;
+  margin: 3% auto;
+
+  .conference-header {
+    h2 {
+      color: $primary;
+    }
+    h1 {
+      color: $black;
+      padding-top: 1%;
+    }
+  }
+  .conference-hero {
+    .hero {
+      background-image: url(/images/conference/conference0.png);
+      background-position: center 36%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin: 0 auto;
+
+      width: 95%;
+      height: 50vh;
+
+      background-color: #ededed;
+      border-radius: 56px;
+      border: 1px solid $footer-background-color;
+      box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+    }
+  }
+  .conference-cards {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 3% 0 3% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+      height: 25%;
+
+      // card style
+      padding: 40px 60px;
+      background-color: #ededed;
+      border-radius: 56px;
+      border: 1px solid $footer-background-color;
+      width: 82%;
+      margin: 1.5% auto;
+      box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+
+      img {
+        height: 30%;
+        width: 30%;
+        border-radius: 30px;
+      }
+      .card-content {
+        width: 65%;
+        h3 {
+          font-size: 1.3em;
+          a {
+            color: $primary;
+          }
+        }
+        h4 {
+          a {
+            color: $primary;
+          }
+        }
+      }
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .conference {
+    .conference-hero {
+      .hero {
+        height: 50vh;
+      }
+    }
+    .conference-cards {
+      .card {
+        flex-direction: column !important; // Override the nth-child selector
+        gap: 20%;
+        width: 100%;
+        padding: 30px;
+        img {
+          width: 100%;
+          height: auto; // Adjust height to maintain aspect ratio
+        }
+        .card-content {
+          width: 100%;
+          margin-top: 8%;
+
+          h3 {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+//main donate page - will take to two different donation funds
+.donate-header {
+  padding: 40px;
+  width: 100%;
+  p {
+    color: $primary;
+    font-size: 35px;
+    text-align: center;
+    font-family: "prox-bold";
+  }
+}
+
+//holder for both donation links
+.main-donate-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 80px 0;
+  row-gap: 100px;
+  //holder for individual donation
+  .donate-link-holder {
+    //donate type box - main style for both
+    margin-top: -40px;
+    .box {
+      width: 390px;
+      height: 360px;
+      border-radius: 40px;
+      margin-bottom: 40px;
+      background-color: $footer-background-color;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    //on hover - outline blue
+    .box:hover {
+      border: solid 4px $primary;
+    }
+
+    //individual pictures for iempac & advocacy
+    .donate-iempac-type {
+    }
+
+    .donate-advocate-type {
+    }
+
+    //button leading to donation type
+    .donate-type-btn {
+      border: none;
+      width: 390px;
+      height: 68px;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 50px;
+      letter-spacing: 0.1pc;
+      font-family: "prox-medium";
+      background-color: $primary;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+      //link inside
+      a {
+        color: $white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+
+    //when active - push down
+    .donate-type-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+//begin responsive style
+@media (max-width: 768px) {
+  .donate-header {
+    p {
+      font-size: 28px;
+    }
+  }
+
+  .donate-link-holder {
+    margin-top: 0px;
+  }
+  .main-donate-holder {
+    flex-direction: column;
+    padding: 30px 0;
+    .donate-link-holder {
+      .box {
+        width: 100%;
+      }
+
+      .donate-type-btn {
+        font-size: 18px;
+        height: 60px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-header {
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .main-donate-holder {
+    .box {
+      width: 50%;
+    }
+    .donate-type-btn {
+      font-size: 16px;
+      height: 60px;
+      margin-bottom: 30px;
+    }
+  }
+}

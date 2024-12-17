@@ -1,0 +1,264 @@
+<!-- HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONATE - IEMPAC</title>
+    <link rel="icon" type="image" href="images/inacep_favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="toplinks">
+        <a href="index.html"><img src="images/logo_test4.png" alt="" /></a>
+        <div class="nav-links">
+          <a href="#">Conference</a>
+          <a href="#">IEMPAC</a>
+          <a href="contact.html">Contact</a>
+          <a href="donate.html" class="nav-donate">Donate</a>
+        </div>
+        <div class="hamburger-icon" id="mobilebutton">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li>
+              <a href="#" class="mobile-link"
+                >Conference <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="mobile-link"
+                >IEMPAC <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="contact.html" class="mobile-link"
+                >Contact <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li>
+              <a href="donate.html" class="mobile-link"
+                >Donate <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="mobile-sub-link">
+              <a href="#" class="mobile-link2"
+                >EMPulse <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="mobile-sub-link">
+              <a href="###" class="mobile-link2"
+                >Board of Directors <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="mobile-sub-link">
+              <a href="#" class="mobile-link2"
+                >By-Laws <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+            <li class="mobile-sub-link">
+              <a href="#" class="mobile-link2"
+                >Career Opportunities <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sublinks-container">
+        <div class="sublinks">
+          <a href="#">EMPulse</a>
+          <a href="#">Board of Directors</a>
+          <a href="#">By-Laws</a>
+          <a href="#">Career Opportunities</a>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <!-- HEADER -->
+    <!-- HEADER -->
+
+    <div class="app">
+      <div class="donate-header">
+        <p>Contribute To IEMPAC</p>
+      </div>
+
+      <!-- form - holds all inputs -->
+      <form method="post" action="#">
+        <div class="donate-form">
+          <!-- form inputs -->
+          <div class="donate-inputs">
+            <!-- first name -->
+            <label for="fName">First Name</label>
+            <input
+              type="text"
+              name="billing_details[first_name]"
+              required
+              id="fName"
+            />
+
+            <!-- last name -->
+            <label for="lName">Last Name</label>
+            <input
+              type="text"
+              name="billing_details[last_name]"
+              required
+              id="lName"
+            />
+
+            <!-- street address -->
+            <label for="sAddress">Street Address</label>
+            <input
+              type="text"
+              name="billing_details[address][line1]"
+              required
+              id="sAddress"
+            />
+
+            <!-- city -->
+            <label for="city">City</label>
+            <input
+              type="text"
+              name="billing_details[address][city]"
+              required
+              id="city"
+            />
+
+            <!-- state -->
+            <label for="state">State</label>
+            <input
+              type="text"
+              name="billing_details[address][state]"
+              required
+              id="state"
+            />
+          </div>
+          <div class="donate-inputs">
+            <!-- ZIP code -->
+            <label for="zip">ZIP Code</label>
+            <input
+              type="text"
+              name="billing_details[address][postal_code]"
+              required
+              id="zip"
+            />
+            <!-- Card Number -->
+            <label for="card-number">Card Number</label>
+            <input
+              type="text"
+              name="card[number]"
+              id="card-number"
+              required
+              placeholder="1234 1234 1234 1234"
+            />
+
+            <!-- Expiration Date -->
+            <label for="card-expiry">Expiration Date</label>
+            <input
+              type="text"
+              name="card[expiry]"
+              id="card-expiry"
+              required
+              placeholder="MM / YY"
+            />
+
+            <!-- CVC -->
+            <label for="card-cvc">CVC</label>
+            <input
+              type="text"
+              name="card[cvc]"
+              id="card-cvc"
+              required
+              placeholder="123"
+            />
+            <!-- email -->
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="billing_details[email]"
+              required
+              id="email"
+            />
+            <div id="card-errors" role="alert"></div>
+          </div>
+
+          <!-- submit button -->
+        </div>
+        <div class="donate-form" style="margin-top: 30px; width: 58%">
+          <div class="donate-inputs" style="width: 100%">
+            <!-- donation amount -->
+            <label for="amount">Donation Amount (USD)</label>
+            <input
+              type="number"
+              name="donation_amount"
+              required
+              id="amount"
+              min="1"
+              step="any"
+              style="
+                border: 2px solid #0065bd;
+                background-color: #dedede;
+                width: 100%;
+              "
+            />
+          </div>
+        </div>
+                
+        <div class="donate-submit-btn">
+          <button type="submit">Donate</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer>
+      <img src="images/inacep_logo.png" alt="" />
+      <div class="footer-links">
+        <div class="footer-col">
+          <a href="#">IEMPAC</a>
+          <a href="#">By-Laws</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">Conference</a>
+          <a href="#">Board of Directors</a>
+        </div>
+        <div class="footer-col">
+          <a href="#">EMpulse</a>
+          <a href="#">Career Opportunities</a>
+        </div>
+        <div class="footer-col">
+          <a href="donate.html" class="footer-donate">Donate</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <h2>Helpful Links</h2>
+        <a href="https://www.acep.org/" target="_blank">ACEP.org</a>
+        <a href="https://www.facebook.com/IndianaACEP/" target="_blank"
+          ><i class="footer-face fa-brands fa-square-facebook"></i> INACEP</a
+        >
+        <a href="https://x.com/IN_ACEP" target="_blank"
+          ><i class="fa-brands fa-square-x-twitter"></i> INACEP</a
+        >
+      </div>
+      <div class="footer-contact">
+        <h2>Indiana ACEP</h2>
+        <p>PO Box 17136</p>
+        <p>Indianapolis, IN 46217</p>
+        <p><i class="fa-solid fa-phone"></i> 317-455-3335</p>
+      </div>
+    </footer>
+    <script src="app/main.js"></script>
+  </body>
+</html>
+<!-- FOOTER -->

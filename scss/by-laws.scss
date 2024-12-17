@@ -1,0 +1,149 @@
+.by-laws-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  h1 {
+    color: $primary;
+    font-family: "prox-bold";
+    font-size: 44px;
+  }
+  p {
+    font-family: "prox-reg";
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.by-laws-view {
+  padding: 60px;
+  background-color: #ededed;
+  border-radius: 96px;
+  border: 1px solid $footer-background-color;
+  width: 82%;
+  margin: 40px auto;
+  box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+  .pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  object {
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+  }
+  h2 {
+    font-family: "prox-bold";
+    font-size: 28px;
+  }
+  .btns {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    column-gap: 40px;
+    a {
+      text-decoration: none;
+      color: $black;
+      font-family: "prox-bold";
+      padding: 10px 40px;
+      background-color: $white;
+      border-radius: 40px;
+      transition: ease 0.2s;
+      border: 2px solid $white;
+      i {
+        margin-left: 6px;
+      }
+      &:hover {
+        border: 2px solid $primary;
+        color: $primary;
+        transition: ease 0.2s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .app {
+    .by-laws-header {
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    .by-laws-view {
+      .pdf {
+        object {
+          height: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .app {
+    .by-laws-header {
+      margin-bottom: -30px;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+    .by-laws-view {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 22px;
+      }
+      .btns {
+        flex-direction: column;
+        row-gap: 42px;
+        margin: 20px 20px 20px 20px;
+      }
+      .pdf {
+        object {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .app {
+    .by-laws-header {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+    .by-laws-view {
+      padding: 50px 30px;
+      h2 {
+        font-size: 22px;
+      }
+      .btns {
+        flex-direction: column;
+        row-gap: 42px;
+        font-size: 14px;
+      }
+    }
+  }
+}

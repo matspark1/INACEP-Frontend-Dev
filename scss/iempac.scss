@@ -1,0 +1,322 @@
+.iempac-hero {
+  width: 100%;
+  height: 358px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/IEMPAC_hero.jpg);
+  background-position: center 36%;
+  background-repeat: no-repeat;
+  color: $white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  h1 {
+    font-family: "prox-bold";
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.67);
+  }
+  a {
+    text-decoration: none;
+    color: $white;
+    background-color: $primary;
+    padding: 12px 50px;
+    border-radius: 40px;
+    border: 3px solid $primary;
+    transition: ease 0.2s;
+    font-family: "prox-bold";
+    font-size: 24px;
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      color: $primary;
+      background-color: $white;
+      transition: ease 0.2s;
+    }
+  }
+}
+.iempac-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+  img {
+    height: 420px;
+    width: 522px;
+    object-fit: cover;
+    border-radius: 98px;
+  }
+  .iempac-text-box {
+    background-color: $footer-background-color;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    border-radius: 96px;
+    padding: 20px 80px;
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+}
+
+.iempac-box-container-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+  img {
+    height: 420px;
+    width: 522px;
+    object-fit: cover;
+    border-radius: 98px;
+  }
+  .iempac-text-box {
+    background-color: $footer-background-color;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    border-radius: 96px;
+    padding: 20px 80px;
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+}
+
+.iempac-box-container-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 600px;
+  img {
+    height: 420px;
+    width: 522px;
+    object-fit: cover;
+    border-radius: 98px;
+  }
+  .iempac-text-box {
+    background-color: $footer-background-color;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    border-radius: 96px;
+    padding: 20px 80px;
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+}
+
+.iempac-join {
+  color: $white;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  a {
+    text-decoration: none;
+    color: $white;
+    background-color: $primary;
+    padding: 18px 150px;
+    border-radius: 40px;
+    border: 3px solid $primary;
+    transition: ease 0.2s;
+    font-family: "prox-bold";
+    font-size: 30px;
+    i {
+      margin-right: 10px;
+    }
+    &:hover {
+      color: $primary;
+      background-color: $white;
+      transition: ease 0.2s;
+    }
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .app {
+    .iempac-box-container {
+      img {
+        height: 400px;
+        width: 460px;
+      }
+      .iempac-text-box {
+        height: 400px;
+        width: 700px;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+    .iempac-box-container-two {
+      img {
+        height: 400px;
+        width: 460px;
+      }
+      .iempac-text-box {
+        height: 400px;
+        width: 700px;
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .app {
+    .iempac-hero {
+      h1 {
+        font-size: 36px;
+      }
+      a {
+        font-size: 22px;
+      }
+    }
+    .iempac-box-container {
+      height: 500px;
+      img {
+        height: 370px;
+        width: 400px;
+      }
+      .iempac-text-box {
+        height: 370px;
+        width: 600px;
+        padding: 30px 70px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .iempac-box-container-two {
+      height: 500px;
+      img {
+        height: 370px;
+        width: 400px;
+      }
+      .iempac-text-box {
+        height: 370px;
+        width: 600px;
+        padding: 30px 70px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .app {
+    .iempac-hero {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .iempac-box-container {
+      height: 900px;
+      flex-direction: column;
+      img {
+        height: 370px;
+        width: 600px;
+      }
+      .iempac-text-box {
+        height: 370px;
+        width: 600px;
+        padding: 30px 70px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .iempac-box-container-mobile {
+      display: flex;
+      height: 900px;
+      flex-direction: column;
+      img {
+        height: 370px;
+        width: 600px;
+      }
+      .iempac-text-box {
+        height: 370px;
+        width: 600px;
+        padding: 30px 70px;
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .iempac-box-container-two {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .app {
+    .iempac-hero {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .iempac-box-container {
+      height: 900px;
+      flex-direction: column;
+      img {
+        height: 340px;
+        width: 340px;
+      }
+      .iempac-text-box {
+        height: 400px;
+        width: 340px;
+        padding: 30px 40px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .iempac-box-container-mobile {
+      height: 900px;
+      flex-direction: column;
+      img {
+        height: 340px;
+        width: 340px;
+      }
+      .iempac-text-box {
+        height: 400px;
+        width: 340px;
+        padding: 30px 40px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .iempac-join {
+      margin-top: -40px;
+      a {
+        font-size: 24px;
+        padding: 12px 70px;
+      }
+    }
+  }
+}
+

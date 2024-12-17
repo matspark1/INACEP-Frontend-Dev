@@ -1,0 +1,112 @@
+//hero image
+.advocacy-hero{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('../images/ad-placeholder.jpg');
+
+
+        //content inside hero
+    .ad-hero-content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        //header
+        .aHeader {
+            color: $white; 
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        //button
+        .ad-type-btn {
+                border: none;
+                width: 300px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                border-radius: 50px;
+                letter-spacing: 0.1pc;
+                font-family: "prox-medium";
+                background-color: $primary;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            
+                //link inside
+                a{
+                    color: $white;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+    
+    
+            //when active - push down
+            .ad-type-btn:active {
+                transform: translateY(2px);
+                box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+             }
+
+    }
+}
+
+//content in advocacy fund page
+
+//content holder
+.ad-body-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    
+
+    //image holder
+    .ad-body-image{
+        width: 320px;
+        height: 360px;
+        border-radius: 40px;
+        margin-bottom: 40px;
+        margin-right: 60px;
+        background-color: $footer-background-color;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background-color: $footer-background-color;
+
+        //actual image
+        .advOne{
+
+        }
+
+        .advTwo{
+
+        }
+    }
+
+    //text holder
+    .ad-body-text-holder{
+        width: 500px;
+        height: 360px;
+        border-radius: 40px;
+        margin-bottom: 40px;
+        background-color: $footer-background-color;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background-color: $footer-background-color;
+        //actual text
+        .ad-body-text {
+            width: 500px;
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+    }
+}

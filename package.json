@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "compile:sass": "sass scss/main.scss css/styles.css -w --quiet-deps --quiet"
+  },
+  "devDependencies": {
+    "sass": "^1.80.5"
+  }
+}

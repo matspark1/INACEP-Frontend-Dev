@@ -1,0 +1,394 @@
+.register-form-view-box {
+  padding: 60px;
+  background-color: #ededed;
+  border-radius: 96px;
+  border: 1px solid $footer-background-color;
+  width: 82%;
+  margin: 40px auto;
+  box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+}
+
+.payment-errors {
+  color: #ff3d3d;
+  font-family: "prox-bold";
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+  padding: 15px 20px;
+  border-radius: 80px;
+  margin: 400px 0;
+  position: relative;
+  text-align: center;
+}
+.spacer {
+  height: 8px;
+}
+
+.syll {
+  width: 300px;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0;
+  font-family: "prox-medium";
+}
+
+.option-selector {
+  display: flex;
+  width: 100%;
+  border: 2px solid $footer-background-color;
+  width: 82%;
+  margin: 16px auto;
+  box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+  border-radius: 96px;
+  padding: 20px 0;
+}
+
+.active {
+  border: 2px solid $primary;
+}
+
+.session-option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-left: 50px;
+  input {
+    margin-right: 20px;
+    margin-top: -32px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.option-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  .session-title {
+    font-family: "prox-bold";
+    font-size: 20px;
+  }
+  .session-bottom {
+    display: flex;
+    align-items: center;
+  }
+  .session-price {
+    color: $primary;
+    font-size: 18px;
+  }
+  .session-desc {
+    font-style: italic;
+    font-size: 16px;
+    color: #565656;
+    margin-left: 20px;
+    margin-top: 2px;
+  }
+}
+
+.total-fee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid $footer-background-color;
+  width: 82%;
+  margin: 16px auto;
+  box-shadow: 0 4px 6px rgba($color: $nav-sublinks-color, $alpha: 0.05);
+  border-radius: 96px;
+  padding: 20px 0;
+  p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    span {
+      color: $primary;
+    }
+  }
+}
+
+.payment-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 60px;
+  row-gap: 44px;
+  h3 {
+    font-family: "prox-bold";
+    text-align: center;
+    color: $primary;
+    font-size: 34px;
+  }
+}
+
+.info,
+.payment-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 18px;
+  width: 100%;
+}
+
+.info-inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "prox-medium";
+  label {
+    margin-left: 10px;
+  }
+  input {
+    font-family: "prox-reg";
+    height: 42px;
+    width: 700px;
+    border: 1px solid $footer-background-color;
+    border-radius: 40px;
+    margin-top: 4px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  select {
+    font-family: "prox-reg";
+    height: 42px;
+    width: 700px;
+    border: 1px solid $footer-background-color;
+    border-radius: 40px;
+    margin-top: 4px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+.submitbtn {
+  margin: 0 auto;
+  text-decoration: none;
+  color: $white;
+  font-family: "prox-bold";
+  font-size: 18px;
+  padding: 20px 40px;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  border-radius: 40px;
+  transition: ease 0.2s;
+  border: 2px solid $primary;
+  cursor: pointer;
+  margin-top: 40px;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    transition: ease 0.2s;
+  }
+}
+
+.warning2 {
+  background-color: #edc87a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 96px;
+  width: 82%;
+  color: $black;
+
+  text-align: center;
+  margin: 30px auto;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .app .register-form-view-box {
+    h1 {
+      font-size: 22px;
+    }
+
+    form {
+      .options-container .option-selector {
+        padding: 20px 40px 20px 0;
+
+        .session-option .option-info {
+          .session-title {
+            font-size: 18px;
+          }
+
+          .session-bottom {
+            .session-price {
+              font-size: 16px;
+            }
+
+            .session-desc {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+
+      .total-fee p {
+        font-size: 16px;
+      }
+
+      .payment-details .info,
+      .payment-details .payment-info {
+        .info-inputs {
+          input,
+          select {
+            width: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .app .register-form-view-box {
+    padding: 60px 30px;
+
+    h1 {
+      font-size: 18px;
+    }
+
+    form {
+      .options-container .option-selector {
+        padding: 20px 40px 20px 0;
+
+        .session-option {
+          input {
+            margin-top: -32px;
+          }
+
+          .option-info {
+            .session-title {
+              font-size: 16px;
+            }
+
+            .session-bottom {
+              flex-direction: column;
+              align-items: flex-start;
+              margin-top: -2px;
+
+              .session-price {
+                font-size: 16px;
+              }
+
+              .session-desc {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .total-fee p {
+        font-size: 16px;
+      }
+
+      .payment-details .info,
+      .payment-details .payment-info {
+        .info-inputs {
+          input,
+          select {
+            width: 380px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .app .register-form-view-box {
+    padding: 60px 10px;
+
+    h1 {
+      font-size: 16px;
+      font-family: "prox-bold";
+    }
+
+    form {
+      .payment-details {
+        .info {
+          .syll {
+            width: 220px;
+          }
+        }
+      }
+      .options-container .option-selector {
+        padding: 20px 40px 20px 0;
+
+        .session-option {
+          input {
+            margin-left: -6px;
+            margin-top: -22px;
+          }
+
+          .option-info {
+            .session-title {
+              font-size: 13px;
+            }
+
+            .session-bottom {
+              flex-direction: column;
+              align-items: flex-start;
+              margin-top: -2px;
+
+              .session-price {
+                font-size: 12px;
+              }
+
+              .session-desc {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .total-fee {
+        padding: 10px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .payment-details .info,
+      .payment-details .payment-info {
+        h3 {
+          font-size: 22px;
+        }
+
+        .info-inputs {
+          input,
+          select {
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .app .register-form-view-box form .options-container .option-selector {
+    padding: 20px 16px 20px 0;
+
+    .session-option input {
+      margin-left: -14px;
+      margin-right: 14px;
+    }
+  }
+}

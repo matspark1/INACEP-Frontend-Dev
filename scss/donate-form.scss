@@ -1,0 +1,148 @@
+//advocacy fund & iempac donation
+.donate-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  .donate-inputs {
+    label {
+      display: block;
+      font-size: 16px;
+      color: #7c7c7c;
+      padding-left: 25px;
+      font-family: "prox-bold";
+    }
+
+    input {
+      width: 450px;
+      height: 60px;
+      display: block;
+      font-size: 16px;
+      margin-top: 15px;
+      padding-left: 20px;
+      border-radius: 50px;
+      margin-bottom: 25px;
+      font-family: "prox-reg";
+      border: 2px solid #bbbbbb;
+      background-color: $footer-background-color;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+//donate submit btn
+.donate-submit-btn {
+  width: 500px;
+  height: 68px;
+  margin: 50px auto;
+
+  button {
+    border: none;
+    color: $white;
+    cursor: pointer;
+    width: 500px;
+    height: 68px;
+    font-size: 22px;
+    border-radius: 50px;
+    letter-spacing: 0.1pc;
+    font-family: "prox-medium";
+    background-color: $primary;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+//active effect
+.donate-submit-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+//responsive design for form
+
+@media (max-width: 1350px) {
+  .app {
+    .donate-form {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .donate-form {
+    flex-direction: column;
+    align-items: center;
+
+    .donate-inputs {
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .donate-submit-btn {
+    width: 80%;
+
+    button {
+      width: 100%;
+      font-size: 18px;
+      height: 60px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .app {
+    .donate-form {
+      flex-direction: column;
+      align-items: center;
+
+      .donate-inputs {
+        label {
+          margin-bottom: -10px;
+        }
+        input {
+          font-size: 14px;
+          width: 334px;
+        }
+      }
+    }
+
+    .donate-submit-btn {
+      width: 80%;
+
+      button {
+        width: 100%;
+        font-size: 18px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    .donate-header p {
+      font-size: 30px;
+    }
+  }
+
+  .donate-inputs {
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .donate-inputs {
+    input {
+      font-size: 14px;
+      width: 20%;
+      padding-left: 15px;
+    }
+  }
+
+  .donate-submit-btn {
+    button {
+      font-size: 16px;
+    }
+  }
+}

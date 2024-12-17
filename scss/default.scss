@@ -1,0 +1,66 @@
+// DEFAULT SITE SETTINGS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: $body-background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  font-family: "prox-medium";
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b8b8b;
+  border-radius: 10px;
+}
+
+.mobile-overflow {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+// DEFAULT SITE SETTINGS
+
+// FONTS
+@font-face {
+  font-family: "prox-reg";
+  src: url(../fonts/ProximaNova-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "prox-medium";
+  src: url(../fonts/ProximaNova-Semibold.otf) format("truetype");
+}
+@font-face {
+  font-family: "prox-bold";
+  src: url(../fonts/ProximaNova-Bold.otf) format("truetype");
+}
+// FONTS
+
+.app {
+  width: 100%;
+}

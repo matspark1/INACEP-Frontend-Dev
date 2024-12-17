@@ -1,0 +1,172 @@
+.forminator-prefix {
+  font-family: "prox-medium";
+}
+
+.forminator-card-message {
+  font-family: "prox-medium";
+}
+
+button {
+  font-family: "prox-bold";
+  width: 100%;
+  border-radius: 60px;
+}
+
+.forminator-label {
+  font-size: 16px;
+  color: #0065bd;
+  font-family: "prox-bold";
+  margin-left: 12px;
+}
+
+.info-inputs2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "prox-medium";
+}
+
+.info-inputs2 .forminator-field {
+  width: 100%;
+}
+
+.info-inputs2 .forminator-field .forminator-checkbox {
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  margin: 16px auto;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
+  border-radius: 96px;
+  padding: 20px 20px 20px 40px;
+}
+.forminator-checkbox-label {
+  font-size: 18px;
+  width: 100%;
+}
+
+.forminator-ui.forminator-custom-form[data-design="flat"]
+  .forminator-checkbox
+  .forminator-checkbox-label
+  span {
+  color: #0065bd;
+}
+
+.info-inputs2 .forminator-field .forminator-radio {
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  margin: 16px auto;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
+  border-radius: 96px;
+  padding: 20px 20px 20px 40px;
+}
+.info-inputs2 .forminator-field .forminator-radio .forminator-radio-label {
+  font-size: 18px;
+  width: 100%;
+}
+
+.forminator-ui.forminator-custom-form[data-design="flat"]
+  .forminator-radio
+  .forminator-radio-label
+  span {
+  color: #0065bd;
+}
+
+.info-input3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "prox-medium";
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  margin: 28px auto;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
+  border-radius: 96px;
+  padding: 14px 0;
+}
+
+.info-input3 .forminator-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 18px;
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+.info-input3 .forminator-field span,
+.info-input3 .forminator-field label,
+.info-input3 .forminator-field input {
+  font-size: 18px;
+}
+
+.info-input3 .forminator-input .forminator-calculation {
+  width: 80px;
+  color: #141414;
+}
+
+.info-inputs2 .forminator-label {
+  font-size: 20px;
+  margin-left: 0;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.info-inputs2 .forminator-field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-bottom: 20px;
+}
+
+.forminator-description {
+  text-align: center;
+  color: #909090;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.forminator-radio-label span,
+.forminator-checkbox-label span {
+  color: #0065bd;
+}
+.forminator-ui#forminator-module-1612.forminator-design--flat
+  .forminator-select2
+  + .forminator-select.select2-container--open
+  .selection
+  .select2-selection--single[role="combobox"] {
+  font-family: "prox-medium";
+}
+
+.forminator-ui * {
+  font-family: "prox-medium";
+}
+.forminator-select--field,
+.forminator-select--field *,
+.select2-container * {
+  font-family: "prox-medium", sans-serif !important;
+  background-color: #fff;
+  border-radius: 26px;
+}
+
+@media screen and (max-width: 545px) {
+  .info-inputs2 .forminator-field .forminator-radio .forminator-radio-label {
+    font-size: 14px;
+  }
+  .info-inputs2 .forminator-field .forminator-radio {
+    padding: 20px 4px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .info-inputs2
+    .forminator-field
+    .forminator-checkbox
+    .forminator-checkbox-label {
+    font-size: 14px;
+  }
+  .info-inputs2 .forminator-field .forminator-checkbox {
+    padding: 20px 30px;
+  }
+}
